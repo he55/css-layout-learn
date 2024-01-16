@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 10px;
+}
+.bg{
+    height: 250px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.container{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+.icon{
+    text-align: center;
+}
+.icon img{
+    width: 24px;
+}
+/* .container>div:nth-child(-n+4){
+    margin-right: 20px;
+} */

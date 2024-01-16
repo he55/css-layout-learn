@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1+*{
+        color: red;
+       } */
+        /* h1~*{
+        color: red;
+       } */
+        /* h1~h2{
+        color: blueviolet;
+       } */
+        /* h1+h2{
+        color: yellow;
+       } */
+
+        /* h2[title$="2"] {
+            color: red;
+        }
+
+        a {
+            font-size: 20px;
+
+            &:visited {
+                color: chocolate;
+            }
+        }
+
+        a:link {
+            color: pink;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: aqua;
+        } */
+
+        div :nth-child(-n+2){
+            color: red;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <a href="http://bing.com">bing.com</a>
+    <div class="container">
+        <h1>11</h1>
+        <h2 title="21">22</h2>
+        <h3>33</h3>
+        <h2 title="12">22</h2>
+        <h2>22</h2>
+    </div>
+</body>
+
+</html>
