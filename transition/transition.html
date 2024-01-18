@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+        }
+        .border {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: pink;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            transition:
+                border-radius 1s,
+                background-color 1s,
+                rotate 1s;
+        }
+        .border:hover {
+            border-radius: 50%;
+            background-color: chocolate;
+            rotate: 1turn;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="border">border1</div>
+        <div class="border">border2</div>
+        <div class="border">border3</div>
+    </div>
+</body>
+
+</html>
