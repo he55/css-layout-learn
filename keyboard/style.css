@@ -1,3 +1,28 @@
+:root{
+    color: black;
+    --bg-color:#ededed;
+    --back-button-image:url(back.png);
+    --wxid-color:#6b6b6b;
+    --zz-bg-color:white;
+    --zz-hr-color:#e5e5e5;
+    --keyboard-bg-color:#f7f7f7;
+    --keyboard-button-bg-color:white;
+    --keyboard-del-button-bg-image:url(del.png);
+    --keyboard-zz-button-color:white;
+}
+@media(prefers-color-scheme: dark){
+:root{
+    color: white;
+    --bg-color:#111111;
+    --back-button-image:url(back-light.png);
+    --wxid-color:#888888;
+    --zz-bg-color:#191919;
+    --zz-hr-color:#242424;
+    --keyboard-bg-color:#1e1e1e;
+    --keyboard-button-bg-color:#2c2c2c;
+    --keyboard-del-button-bg-image:url(del-light.png);
+    --keyboard-zz-button-color:white;
+}}
 *{
     margin: 0;
     padding: 0;
@@ -5,10 +30,13 @@
 }
 .container{
     padding-top: 20px;
-    background-color: #ededed;
+    background-color: var(--bg-color);
 }
 .back{
     height: 27px;
+    background-image: var(--back-button-image);
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-left: 10px;
 }
 .user{
@@ -21,15 +49,16 @@
     border-radius: 8px;
 }
 .name>:first-child{
+    font-size: 18px;
     font-weight: bold;
 }
 .name :nth-child(2){
-    color: #6b6b6b;
+    color: var(--wxid-color);
     margin-top: 5px;
 }
 .zz{
     height: 600px;
-    background-color: white;
+    background-color: var(--zz-bg-color);
     border-radius: 20px;
     padding: 20px 30px;
     font-weight: bold;
@@ -41,7 +70,7 @@
     color: #576b95;
 }
 .zz>hr{
-    border-color: #e5e5e5;
+    border-color: var(--zz-hr-color);
 }
 .zz>p~*{
     margin-top: 15px;
@@ -50,7 +79,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: var(--keyboard-bg-color);
     height: 250px;
     font-size: 20px;
     font-weight: bold;
@@ -62,14 +91,14 @@
     user-select: none;
 }
 .keyboard>div{
-    background-color: white;
+    background-color: var(--keyboard-button-bg-color);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .keyboard>div[del]{
-    background-image: url(del.png);
+    background-image: var(--keyboard-del-button-bg-image);
     background-repeat: no-repeat;
     background-size: 33px 30px;
     background-position: center;
@@ -78,7 +107,7 @@
     background-color: #07c160;
     grid-row: 2/5;
     grid-column: 4;
-    color: white;
+    color: var(--keyboard-zz-button-color);
 }
 .keyboard>div[zero]{
     grid-column: 1/3;
