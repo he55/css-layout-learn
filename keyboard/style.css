@@ -1,6 +1,50 @@
 *{
     margin: 0;
     padding: 0;
+    user-select: none;
+}
+.container{
+    padding-top: 20px;
+    background-color: #ededed;
+}
+.back{
+    height: 27px;
+    margin-left: 10px;
+}
+.user{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    margin: 30px 30px 20px;
+}
+.user>img{
+    border-radius: 8px;
+}
+.name>:first-child{
+    font-weight: bold;
+}
+.name :nth-child(2){
+    color: #6b6b6b;
+    margin-top: 5px;
+}
+.zz{
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 30px;
+    font-weight: bold;
+}
+.zz>:nth-child(2){
+    font-size: 40px;
+}
+.zz>:last-child{
+    color: #576b95;
+}
+.zz>hr{
+    border-color: #e5e5e5;
+}
+.zz>p~*{
+    margin-top: 15px;
 }
 .keyboard{
     position: fixed;
