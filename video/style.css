@@ -21,6 +21,7 @@ body{
 }
 .icon img{
     width: 24px;
+    vertical-align: bottom;
 }
 /* .container>div:nth-child(-n+4){
     margin-right: 20px;
