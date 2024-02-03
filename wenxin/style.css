@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -26,10 +27,10 @@ body {
 
 .menuitem {
     display: flex;
-    align-items: center;
-    background-color: white;
     padding: 5px 15px;
     border-bottom: 1.5px solid #f0f0f0;
+    align-items: center;
+    background-color: white;
 
     >img {
         width: 35px;
@@ -37,46 +38,47 @@ body {
     }
 
     >p {
-        font-size: 15px;
         flex: 1;
         padding-left: 10px;
+        font-size: 15px;
     }
 }
 
 .bar {
-    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 10px 0;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
+    background-color: white;
+    list-style: none;
 
-.baritem {
-    img {
-        width: 48px;
-        height: 42px;
-    }
+    >li {
+        >img {
+            width: 48px;
+            height: 42px;
+        }
 
-    p {
-        font-size: 14px;
+        >p {
+            font-size: 14px;
+        }
     }
 }
 
 .dot {
     position: relative;
 
-    i {
+    &::after {
+        content: '';
         position: absolute;
-        top: 1px;
-        right: 1px;
-
-        img {
-            width: 15px;
-            height: 15px;
-        }
+        top: 0;
+        right: 0;
+        width: 15px;
+        height: 15px;
+        background: url(aii.png) no-repeat;
+        background-size: cover;
     }
 }
